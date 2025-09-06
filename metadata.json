@@ -1,0 +1,6 @@
+{
+  "name": "AI Facebook Ad Flyer Generator",
+  "description": "An application that uses AI to generate professional, eye-catching Facebook ad flyers for a web design service, based on user-provided information and an image.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}
