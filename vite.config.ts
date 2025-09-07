@@ -5,7 +5,7 @@ export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
       define: {
-        'process.env.VITE_GEMINI_API_KEY': JSON.stringify(env.VITE_GEMINI_API_KEY),
+        __APP_GEMINI_API_KEY__: JSON.stringify(env.VITE_GEMINI_API_KEY),
       },
       resolve: {
         alias: {

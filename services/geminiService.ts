@@ -1,7 +1,8 @@
 import { GoogleGenAI, Type } from "@google/genai";
 import type { AdConcept } from '../types';
 
-const apiKey = process.env.VITE_GEMINI_API_KEY as string;
+declare const __APP_GEMINI_API_KEY__: string;
+const apiKey = __APP_GEMINI_API_KEY__;
 
 if (!apiKey) {
   throw new Error('VITE_GEMINI_API_KEY environment variable not set');
